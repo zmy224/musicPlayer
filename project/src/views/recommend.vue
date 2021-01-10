@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class='swiperT'>
         <swiper :swipeList='swipeList'></swiper>
         <h5 style="color:gold">热门歌单推荐</h5>
     </div>
@@ -31,6 +31,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.swiperT {
+    position: absolute;
+   top: 80px;
+    width: 100%;
+}
 </style>

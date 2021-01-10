@@ -1,8 +1,20 @@
 <template>
   <div id="app">
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
+     <!-- 播放器 -->
+   <player></player>
   </div>
 </template>
+<script>
+import player  from './views/player.vue'
+export default {
+  components:{
+    player
+  }
+}
+</script>
 
 <style>
 html,head,body{
